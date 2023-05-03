@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gráfica de barras</title>
+    
+    <!-- Importa la biblioteca Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    
+    <!-- Define un contenedor para la gráfica -->
+    <div id="grafica"></div>
+    
+    <script>
+        // Crea los datos para la gráfica de barras
+        var data = [
+            {
+                x: ['A', 'B', 'C'],
+                y: [10, 20, 30],
+                type: 'bar'
+            }
+        ];
+
+        // Crea la figura de Plotly
+        var layout = {
+            title: 'Gráfica de barras'
+        };
+
+        Plotly.newPlot('grafica', data, layout);
+    </script>
+    
+</body>
+</html>
